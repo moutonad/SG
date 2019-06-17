@@ -1,0 +1,11 @@
+﻿@model SG.ViewModels.YearViewModel
+
+@section Scripts{
+    @Scripts.Render("~/bundles/knockout")
+    @Scripts.Render("~/bundles/app")
+}
+<section data-grid="container" class="page-wrapper">
+    <div data-grid="col-12">
+        @Model.GetDisplayYearsResults()
+    </div>
+</section>
